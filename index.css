@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Coiny&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tilt+Prism&display=swap');
+
+* {
+    text-align: center;
+    font-family: "Itim", sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 1rem;
+}
+
+.img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.container {
+    width: 15rem;
+}
+
+.social {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: repeat(3, 15rem); /* 3 equal columns */
+    gap: 2rem;
+    column-gap: 5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 945px) and (min-width: 601px) {
+    .containers {
+        grid-template-columns: repeat(2, 15rem); /* 3 equal columns */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containers {
+        grid-template-columns: repeat(1, 15rem); /* 3 equal columns */
+    }
+}
